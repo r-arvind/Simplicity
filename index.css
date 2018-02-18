@@ -1,0 +1,338 @@
+/* for screen size less than 600px */
+@media only screen and (max-width: 600px){
+
+    #blogtitle{
+        font-size: 11.5vw;
+        padding:3.5px;
+        padding-top: 1.6em;}
+
+    #motto{
+        font-size: 5vw;}
+
+    .blogbody{
+        font-family: Raleway;
+        color: black;
+        align-self: center;
+        background-color: rgba(0, 0, 0, 0);
+        width:92%;
+        padding: 0.9em;
+        margin: 5em auto;}
+
+    .nav{
+        display: none;
+    }
+    ul{
+        text-align: center;
+        }   
+    li{
+        font-size:15px;
+    }
+    .post{
+        padding:0.8em;
+    }
+    .description{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        text-align: left;}
+    .title{
+        color: #19232b;
+        font-size:8.5vw;
+    }
+
+    .post-image{
+        text-align:center;
+        background-image: url("assets/post2.jpg");
+        width:100%;
+        height:35%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .sidebar{
+        margin: -0.7em 0.8em;
+    }
+
+    .social{
+        width:70%;
+    }
+
+}
+
+
+/* for screen size more than 600px */
+@media only screen and (min-width: 600px){
+
+    #blogtitle{
+        
+        font-size: 4.7vw;
+        padding-top: 1.3em;}
+    #motto{
+        font-size: 1.7vw;}
+
+    .nav{
+        position:relative;
+        top:2em;
+        margin: 2em auto 5em auto;}   
+    .item{
+        text-decoration: none;
+        color: white;
+        }
+        
+    li{
+        font-size: 18px;
+        display:inline-block;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        font-family: Roboto;
+        font-weight: bold;
+        border-bottom: 5px solid white;
+        margin:0.5em;
+        padding-bottom:7px;}
+        
+    .blogbody{
+        font-family: Raleway;
+        color: black;
+        background-color: rgba(0, 0, 0, 0);
+        width: 80%;
+        padding: 0.9em;
+        margin: auto;
+        }
+    ul{
+        text-align: center;
+        position:relative;
+        left:-2em;
+    }   
+
+    .post{
+        padding: 0.7em 1.5em;
+    }
+    .description{
+        font-family:Roboto;
+        font-size: 19.5px;
+        text-align: left;}
+
+    .title{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #181818;
+        font-size:3.2vw;
+    }
+    .post-image{
+        text-align:center;
+        background-image: url("assets/post2.jpg");
+        width:100%;
+        height:60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sidebar{
+        margin: -1.7em 1.5em;
+    }
+}
+
+
+
+/* common properties for all devices */
+html
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("textures/back3.png");
+}
+
+#body{
+    transition: margin-left .5s;
+}
+
+#blogtitle{
+    font-family : Roboto;
+    text-align: center;
+    margin-bottom: 10px;}
+
+#motto{
+    margin: 0.2em;
+    text-align: center;
+    font-family: Roboto;
+}
+
+
+.postbody{
+
+    font-family: Raleway;
+    color: black;
+    align-self: center;
+}
+
+
+.post
+{
+
+    background-color: rgb(255, 255, 255);
+    font-family: Raleway;
+    color: black;
+
+}
+.readmore{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 20px;
+    color: rgb(39, 44, 170);
+    text-align: right;
+}
+.readmore:hover{
+    text-decoration: underline;
+}
+
+footer{
+
+    font-family: Roboto;
+    text-align: center;
+    background-color: #1a1919;
+
+}
+
+.footext{
+    color: #2196f3;
+    font-size: 1em;
+    padding: 10px;
+}
+
+
+
+/* ----------------------------------sidenav body ----------------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #161616; 
+    overflow-x: hidden;
+    padding-top: 4em;
+    transition: 0.3s;
+    text-align:center;
+    opacity:1;
+
+}
+
+.userImage{
+    background-image: url('assets/userimage.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:8em;
+    width:8em;
+    margin: auto;
+    border-radius: 40%; 
+}
+
+.userName{
+    font-size:1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width:10em;
+    padding:1em;  
+}
+
+.userDetail{
+
+    text-align: left;
+    width:10em;
+    font-size:0.9em;
+    font-family: Oxygen;
+    margin: auto;
+    width:15em;
+    padding:1em;
+}
+
+.social{
+
+    list-style-type: none;
+
+}
+.social > li{
+    display:inline-block;
+    border:0px;
+    margin:5px;
+    font-size:1.5em;
+    padding:2px;
+}
+
+i{
+
+    color:white;
+}
+/* ----------------------------------rest body when sidenav is open ----------------------------------------*/
+
+.rest-body{
+    transition: 0.3s;
+}
+
+
+/* ----------------------------------sidenav button ----------------------------------------*/
+.sidebar{
+    cursor: pointer;
+    border-radius:25px;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 2;
+
+}
+
+.bar1,.bar2,.bar3{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+    transform: rotate(-45deg) translate(-8px, 5px);
+
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -5px);
+    transform: rotate(45deg) translate(-8px, -5px);
+}
+
+/*----------------------------top bar on scroll----------------------*/
+.topbar {
+    background-color: rgb(27, 27, 27); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+    display:inline-block;
+}
+
+/* Style the navbar links */
+.topbar a {
+    font-family:Roboto;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 4px 2px 2px 0px;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    background-color: rgb(196, 196, 196);
+    color: black;
+}

@@ -1,0 +1,107 @@
+<html> 
+  <head> 
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/sidebar.js"></script>
+    <script src="js/scrollbar.js"></script>
+  </head> 
+  <body>
+    <div id="body">
+<!----------------------------------Side Nav Onclick---------------------------------------------->
+
+<div id="mySidenav" class="sidenav">
+
+  <div class="userImage"></div><br><hr width="70%">
+  <p class="userName">Cocker Spaniel</p>
+  <p class="userDetail">Hi! I am a Dog, and welcome to my personal Blog. Currently, I am working as a night-guard plus entertainer. I like to write about what I observe about humans.  </p>
+  <br><hr width="70%">
+  <ul class="social">
+    <li><a href="https://github.com/r-arvind" target="_blank"><i class="fa fa-github"></i></a></li>
+    <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+</div>
+
+<div class="sidebar" id="sidebar" onclick="execute('sidebar'); Nav();">
+    <div class="bar1"></div>  
+    <div class="bar2"></div>  
+    <div class="bar3"></div>  
+</div>
+<!----------------------------------Top Bar Onscroll---------------------------------------------->
+
+<div class="topbar" id="topbar">
+    <p style="font-family: 'Lato', sans-serif; float:left; margin-left:3em; margin-top:0.6em; margin-bottom:0.6em; font-size:1.5em;">Blog Title</p>
+    <a href="#body">Home</a>
+</div>
+
+<!----------------------------------Title---------------------------------------------->
+<div class="rest-body" id="rest-body" onclick="closeNav()">
+        <h1 id="blogtitle">Blog Title</h1>
+        <p id="motto">A Simple yet Elegant template for blogs inspired from Blogger</p>
+<!----------------------------------------Nav Bar visible only on desktop-------------------------------------------------->
+        <div class="nav">
+          <ul>
+            <div class="nav-item">
+              <li><a class="item" href="index.html">HOME</a></li>
+            </div>
+          </ul>
+        </div>
+<!--------------------------------------Blog Post Area---------------------------------------------------->
+        <div class="blogbody">
+          <div class="postbody"> 
+
+          <div class="post">
+            <div>
+              <h1 class="title">My First Post with Image</h1>
+              <p class="date">December 15, 2017</p>
+              <hr>
+              <br>
+              <div class="post-image"></div>
+              <p class="description">
+                  Give a short description of your blog post here. This should be a short summary around 50 words, if it is too short or too long, the blog wont look good.
+                  The description should make the readers what is behind this link.
+                  Just for the sake of filling this gap, Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, hic ipsa iure aut aliquid a, fuga optio, saepe sit ut eveniet! Porro, voluptates impedit! Veniam laborum quo reprehenderit magni. Tempore! Just some random Lorem ipsum!
+              </p>
+              <br>
+              <h4><a class="readmore" href="pages/page1.html">Read more...</a></h4>
+            </div>
+          </div>
+        <br>
+        <br>
+        <div class="post">
+            <div>
+              <h1 class="title">My Second Post without Image</h1>
+              <p class="date">December 12, 2017</p>
+              <hr>
+              <p class="description">
+                Give a short description of your blog post here. This should be a short summary around 50 words, if it is too short or too long, the blog wont look good.
+                The description should make the readers what is behind this link.
+                Just for the sake of filling this gap, Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, hic ipsa iure aut aliquid a, fuga optio, saepe sit ut eveniet! Porro, voluptates impedit! Veniam laborum quo reprehenderit magni. Tempore! Just some random Lorem ipsum!
+              </p>
+              <h4><a class="readmore" href="pages/page2.html">Read more...</a></h4>
+            </div>
+          </div>
+        <br>
+
+
+        <!--add more posts here-->
+        <!-- copy the post1 class and change the content -->
+              
+          </div>
+        </div>
+        </div>
+      </div>
+<!----------------------------------------  FOOTER   ---------------------------------------------------->
+    <footer>
+        <div class="footext">Template by <i><a href="https://github.com/r-arvind" style="color:#2196f3;">@r-arvind</a></i></div>
+    </footer>
+
+  </body> 
+</html> 
