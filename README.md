@@ -1,2 +1,1 @@
-#A Simple Blog Template inspired from Blogger
-
+A Simple Blog Template inspired from Blogger
