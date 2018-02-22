@@ -10,6 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/sidebar.js"></script>
     <script src="js/scrollbar.js"></script>
+    <!-- had to add this style element because the sidnav button was misbehaving in mozilla -->
+    <style type="text/css">
+    @-moz-document url-prefix() {
+      .sidebar{
+        margin: -1.7em 0.8em;
+      }}
+    </style>
   </head> 
   <body>
     <div id="body">
